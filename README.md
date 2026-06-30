@@ -2,7 +2,7 @@
 
 A simple, good-looking one-page media kit. No coding tools or installs needed to run it — it's just three files your browser already understands.
 
-**Live site:** _(your GitHub Pages link will go here once it's published)_
+**Live site:** https://khnam-crypto.github.io/mediakit-website/
 
 ---
 
