@@ -7,34 +7,32 @@
   <!-- ============================================================
        EDIT ME: Page title (shows in the browser tab & Google)
        ============================================================ -->
-  <title>Your Name — Media Kit</title>
-  <meta name="description" content="Media kit for Your Name. Audience, reach, and ways to work together." />
+  <title>Your Name — Finance Researcher (Asset Pricing &amp; Fixed Income)</title>
+  <meta name="description" content="Academic page of Your Name, finance researcher working on asset pricing and the term structure of interest rates." />
 
-  <!-- Social share preview (optional). Replace the image URL later. -->
-  <meta property="og:title" content="Your Name — Media Kit" />
-  <meta property="og:description" content="Audience, reach, and ways to work together." />
+  <meta property="og:title" content="Your Name — Finance Researcher" />
+  <meta property="og:description" content="Asset pricing · Bond term structure · Macro-finance" />
   <meta property="og:type" content="website" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>" />
 </head>
 <body>
 
   <!-- ===================== NAV ===================== -->
   <header class="nav" id="top">
     <div class="container nav__inner">
-      <!-- EDIT ME: Your name / brand -->
+      <!-- EDIT ME: Your name -->
       <a class="nav__brand" href="#top">Your Name</a>
       <nav class="nav__links">
-        <a href="#about">About</a>
-        <a href="#reach">Reach</a>
-        <a href="#audience">Audience</a>
-        <a href="#work">Work</a>
-        <a href="#services">Services</a>
-        <a href="#contact" class="nav__cta">Work with me</a>
+        <a href="#research">Research</a>
+        <a href="#papers">Papers</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact" class="nav__cta">Contact</a>
       </nav>
     </div>
   </header>
@@ -43,235 +41,229 @@
   <section class="hero">
     <div class="container hero__inner">
       <div class="hero__text reveal">
-        <p class="eyebrow">Media Kit · <span id="year"></span></p>
-        <!-- EDIT ME: Headline + what you do -->
-        <h1>Hi, I'm <span class="grad">Your Name</span>.<br />I help brands reach <em>the right</em> people.</h1>
+        <p class="eyebrow">Finance · Asset Pricing · Fixed Income</p>
+        <!-- EDIT ME: Name + position + institution -->
+        <h1><span class="grad">Your Name</span></h1>
+        <p class="hero__role">
+          PhD Candidate in Finance · <span class="hero__inst">Your University</span>
+        </p>
         <p class="lead">
-          One-line pitch goes here — who you are, what you make, and why an audience trusts you.
-          Keep it punchy: think of it as your elevator pitch to a brand or client.
+          I study <strong>asset pricing</strong> and the <strong>term structure of interest rates</strong> —
+          how bond risk premia move over time, what the yield curve reveals about the macroeconomy, and
+          how investors are compensated for bearing interest-rate and macro risk. <em>(Replace this with your
+          own one-paragraph research statement.)</em>
         </p>
         <div class="hero__actions">
-          <a href="#contact" class="btn btn--primary">Start a collaboration</a>
-          <a href="#reach" class="btn btn--ghost">See the numbers ↓</a>
+          <!-- EDIT ME: drop a file named cv.pdf in this folder for the CV button to work -->
+          <a href="cv.pdf" class="btn btn--primary">Download CV (PDF)</a>
+          <a href="#papers" class="btn btn--ghost">Working papers ↓</a>
         </div>
-        <!-- EDIT ME: Replace # with links to your real profiles -->
+        <!-- EDIT ME: replace # with your real profile links -->
         <div class="hero__social">
-          <a href="#" aria-label="Instagram">Instagram</a>
-          <a href="#" aria-label="YouTube">YouTube</a>
-          <a href="#" aria-label="TikTok">TikTok</a>
-          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#">Google Scholar</a>
+          <a href="#">SSRN</a>
+          <a href="#">ORCID</a>
+          <a href="#">GitHub</a>
+          <a href="mailto:you@university.edu">Email</a>
         </div>
       </div>
 
       <div class="hero__card reveal">
-        <!-- EDIT ME: Drop a photo named profile.jpg into this folder to replace the placeholder -->
+        <!-- EDIT ME: drop a photo named profile.jpg into this folder -->
         <div class="avatar" id="avatar">
           <img src="profile.jpg" alt="Your photo"
                onerror="this.style.display='none';this.parentElement.classList.add('avatar--empty')" />
           <span class="avatar__fallback">YN</span>
         </div>
         <div class="hero__chips">
+          <span class="chip">🏛️ Your University</span>
           <span class="chip">📍 Your City</span>
-          <span class="chip">🗣️ English</span>
-          <span class="chip">🎯 Your Niche</span>
+          <span class="chip">📨 Job market 20XX</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== STATS STRIP ===================== -->
-  <section class="strip" id="reach">
+  <!-- ===================== AT A GLANCE ===================== -->
+  <section class="strip">
     <div class="container strip__grid">
-      <!-- EDIT ME: your real numbers -->
-      <div class="stat reveal"><span class="stat__num" data-count="125000">0</span><span class="stat__label">Total followers</span></div>
-      <div class="stat reveal"><span class="stat__num" data-count="8.4" data-decimals="1" data-suffix="%">0</span><span class="stat__label">Avg. engagement</span></div>
-      <div class="stat reveal"><span class="stat__num" data-count="2100000">0</span><span class="stat__label">Monthly reach</span></div>
-      <div class="stat reveal"><span class="stat__num" data-count="60">0</span><span class="stat__label">Brand partners</span></div>
+      <!-- EDIT ME: your real numbers (set the data-count value) -->
+      <div class="stat reveal"><span class="stat__num" data-count="3">0</span><span class="stat__label">Publications</span></div>
+      <div class="stat reveal"><span class="stat__num" data-count="4">0</span><span class="stat__label">Working papers</span></div>
+      <div class="stat reveal"><span class="stat__num" data-count="250">0</span><span class="stat__label">Citations</span></div>
+      <div class="stat reveal"><span class="stat__num" data-count="15">0</span><span class="stat__label">Invited talks</span></div>
     </div>
   </section>
 
-  <!-- ===================== ABOUT ===================== -->
-  <section class="section" id="about">
-    <div class="container grid-2">
-      <div class="reveal">
-        <p class="section__eyebrow">About</p>
-        <h2 class="section__title">A quick introduction</h2>
-      </div>
-      <div class="reveal prose">
-        <!-- EDIT ME: 2–3 short paragraphs about you -->
-        <p>
-          Write a warm, confident paragraph about who you are and what you create. Mention the
-          space you work in, the kind of content or work you're known for, and the people who follow you.
-        </p>
-        <p>
-          Add a second paragraph about what makes your audience special — are they highly engaged,
-          a specific demographic, in a valuable niche? Brands care about <em>who</em> they reach, not just how many.
-        </p>
-        <ul class="ticks">
-          <li>Highlight #1 — e.g. "Featured in [publication]"</li>
-          <li>Highlight #2 — e.g. "100+ pieces of branded content"</li>
-          <li>Highlight #3 — e.g. "Award / milestone / notable client"</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== AUDIENCE ===================== -->
-  <section class="section section--alt" id="audience">
+  <!-- ===================== RESEARCH INTERESTS ===================== -->
+  <section class="section" id="research">
     <div class="container">
       <div class="section__head reveal">
-        <p class="section__eyebrow">Audience</p>
-        <h2 class="section__title">Who you'll reach</h2>
-        <p class="section__sub">A snapshot of the community. Replace these with your real analytics.</p>
-      </div>
-
-      <div class="audience">
-        <!-- Age breakdown -->
-        <div class="panel reveal">
-          <h3>Age</h3>
-          <!-- EDIT ME: label + percentage on the bar's style width -->
-          <div class="bar"><span>18–24</span><div class="bar__track"><i style="width:32%"></i></div><b>32%</b></div>
-          <div class="bar"><span>25–34</span><div class="bar__track"><i style="width:41%"></i></div><b>41%</b></div>
-          <div class="bar"><span>35–44</span><div class="bar__track"><i style="width:18%"></i></div><b>18%</b></div>
-          <div class="bar"><span>45+</span><div class="bar__track"><i style="width:9%"></i></div><b>9%</b></div>
-        </div>
-
-        <!-- Gender -->
-        <div class="panel reveal">
-          <h3>Gender</h3>
-          <div class="bar"><span>Women</span><div class="bar__track"><i style="width:58%"></i></div><b>58%</b></div>
-          <div class="bar"><span>Men</span><div class="bar__track"><i style="width:40%"></i></div><b>40%</b></div>
-          <div class="bar"><span>Other</span><div class="bar__track"><i style="width:2%"></i></div><b>2%</b></div>
-        </div>
-
-        <!-- Top locations -->
-        <div class="panel reveal">
-          <h3>Top locations</h3>
-          <div class="bar"><span>🇺🇸 United States</span><div class="bar__track"><i style="width:46%"></i></div><b>46%</b></div>
-          <div class="bar"><span>🇬🇧 United Kingdom</span><div class="bar__track"><i style="width:14%"></i></div><b>14%</b></div>
-          <div class="bar"><span>🇨🇦 Canada</span><div class="bar__track"><i style="width:11%"></i></div><b>11%</b></div>
-          <div class="bar"><span>🇦🇺 Australia</span><div class="bar__track"><i style="width:8%"></i></div><b>8%</b></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== FEATURED WORK / COLLABS ===================== -->
-  <section class="section" id="work">
-    <div class="container">
-      <div class="section__head reveal">
-        <p class="section__eyebrow">Featured work</p>
-        <h2 class="section__title">Selected collaborations</h2>
-        <p class="section__sub">Swap these cards for your best campaigns, projects, or press.</p>
+        <p class="section__eyebrow">Research</p>
+        <h2 class="section__title">Research interests</h2>
+        <p class="section__sub">Broadly, empirical and theoretical asset pricing with a focus on fixed income and macro-finance.</p>
       </div>
 
       <div class="cards">
-        <!-- EDIT ME: duplicate a card to add more -->
+        <!-- EDIT ME: rename / reword these themes to match your agenda -->
         <article class="card reveal">
-          <div class="card__media" data-emoji="🎬"></div>
+          <div class="card__media" data-emoji="📈"></div>
           <div class="card__body">
-            <span class="card__tag">Brand campaign</span>
-            <h3>Project or campaign title</h3>
-            <p>One sentence on what you did and the result — e.g. "3-part series that drove 40k site visits."</p>
+            <span class="card__tag">Asset pricing</span>
+            <h3>Risk premia &amp; the cross-section</h3>
+            <p>What compensates investors for bearing systematic risk, and how expected returns vary across assets and over time.</p>
           </div>
         </article>
         <article class="card reveal">
-          <div class="card__media" data-emoji="📸"></div>
+          <div class="card__media" data-emoji="🪙"></div>
           <div class="card__body">
-            <span class="card__tag">Sponsored</span>
-            <h3>Another standout piece</h3>
-            <p>A short, outcome-focused description. Numbers and impact build trust fast.</p>
+            <span class="card__tag">Fixed income</span>
+            <h3>Term structure of interest rates</h3>
+            <p>Modeling the yield curve, decomposing yields into expectations and term premia, and bond return predictability.</p>
           </div>
         </article>
         <article class="card reveal">
-          <div class="card__media" data-emoji="🚀"></div>
+          <div class="card__media" data-emoji="🏦"></div>
           <div class="card__body">
-            <span class="card__tag">Partnership</span>
-            <h3>A notable partnership</h3>
-            <p>Show range — a different format, platform, or client type than the others.</p>
+            <span class="card__tag">Macro-finance</span>
+            <h3>Bonds &amp; the macroeconomy</h3>
+            <p>How inflation, monetary policy, and the business cycle shape interest rates and bond risk premia.</p>
           </div>
         </article>
-      </div>
-
-      <!-- Logos of brands you've worked with -->
-      <p class="logos__label reveal">Trusted by</p>
-      <div class="logos reveal">
-        <!-- EDIT ME: replace with brand names (or logo images later) -->
-        <span>BrandOne</span><span>NorthCo</span><span>Lumen</span>
-        <span>Aria</span><span>Verde</span><span>Pulse</span>
       </div>
     </div>
   </section>
 
-  <!-- ===================== SERVICES / PACKAGES ===================== -->
-  <section class="section section--alt" id="services">
+  <!-- ===================== WORKING PAPERS ===================== -->
+  <section class="section section--alt" id="papers">
     <div class="container">
       <div class="section__head reveal">
-        <p class="section__eyebrow">Work together</p>
-        <h2 class="section__title">Services &amp; packages</h2>
-        <p class="section__sub">Pricing is a starting point — every collaboration can be tailored.</p>
+        <p class="section__eyebrow">Working papers</p>
+        <h2 class="section__title">Work in progress</h2>
+        <p class="section__sub">Click a paper to read the abstract. Add links to the SSRN/PDF version.</p>
       </div>
 
-      <div class="pricing">
-        <!-- EDIT ME: names, prices, and what's included -->
-        <div class="plan reveal">
-          <h3>Starter</h3>
-          <p class="plan__price">$<span>500</span></p>
-          <ul>
-            <li>1 dedicated post</li>
-            <li>2 stories / shorts</li>
-            <li>Usage rights — 30 days</li>
-            <li>1 round of revisions</li>
-          </ul>
-          <a href="#contact" class="btn btn--ghost btn--block">Enquire</a>
-        </div>
+      <div class="pubs">
+        <!-- EDIT ME: duplicate a <details> block to add another paper -->
+        <details class="pub reveal" open>
+          <summary>
+            <span class="pub__year">2025</span>
+            <span class="pub__main">
+              <span class="pub__title">The Term Structure of Bond Risk Premia: A Macro-Finance Perspective
+                <span class="pub__badge">Job market paper</span>
+              </span>
+              <span class="pub__authors">with Coauthor A and Coauthor B</span>
+              <span class="pub__venue">Revise &amp; resubmit, <em>Journal of Finance</em></span>
+            </span>
+          </summary>
+          <div class="pub__abstract">
+            <p>Replace with your abstract. Summarize the question, your approach (data, model, identification),
+            the headline result, and why it matters for understanding bond risk premia and the yield curve.</p>
+            <p class="pub__links">
+              <a href="#">PDF</a> · <a href="#">SSRN</a> · <a href="#">Slides</a>
+            </p>
+          </div>
+        </details>
 
-        <div class="plan plan--featured reveal">
-          <span class="plan__badge">Most popular</span>
-          <h3>Signature</h3>
-          <p class="plan__price">$<span>1,500</span></p>
-          <ul>
-            <li>Everything in Starter</li>
-            <li>Full content series (3 pieces)</li>
-            <li>Cross-platform posting</li>
-            <li>Usage rights — 90 days</li>
-            <li>Performance report</li>
-          </ul>
-          <a href="#contact" class="btn btn--primary btn--block">Enquire</a>
-        </div>
+        <details class="pub reveal">
+          <summary>
+            <span class="pub__year">2024</span>
+            <span class="pub__main">
+              <span class="pub__title">Decomposing the Yield Curve: Expectations versus Term Premia</span>
+              <span class="pub__authors">with Coauthor C</span>
+              <span class="pub__venue">Under review</span>
+            </span>
+          </summary>
+          <div class="pub__abstract">
+            <p>A short abstract describing the paper goes here.</p>
+            <p class="pub__links"><a href="#">PDF</a> · <a href="#">SSRN</a></p>
+          </div>
+        </details>
 
-        <div class="plan reveal">
-          <h3>Custom</h3>
-          <p class="plan__price">Let's talk</p>
-          <ul>
-            <li>Ambassador / retainer</li>
-            <li>Events &amp; appearances</li>
-            <li>Long-form & UGC</li>
-            <li>Exclusive usage rights</li>
-          </ul>
-          <a href="#contact" class="btn btn--ghost btn--block">Enquire</a>
-        </div>
+        <details class="pub reveal">
+          <summary>
+            <span class="pub__year">2024</span>
+            <span class="pub__main">
+              <span class="pub__title">Time-Varying Risk Aversion and the Price of Interest-Rate Risk</span>
+              <span class="pub__authors">solo-authored</span>
+              <span class="pub__venue">Working paper</span>
+            </span>
+          </summary>
+          <div class="pub__abstract">
+            <p>A short abstract describing the paper goes here.</p>
+            <p class="pub__links"><a href="#">PDF</a></p>
+          </div>
+        </details>
       </div>
     </div>
   </section>
 
-  <!-- ===================== TESTIMONIALS ===================== -->
-  <section class="section" id="testimonials">
+  <!-- ===================== PUBLICATIONS ===================== -->
+  <section class="section" id="publications">
     <div class="container">
       <div class="section__head reveal">
-        <p class="section__eyebrow">Kind words</p>
-        <h2 class="section__title">What partners say</h2>
+        <p class="section__eyebrow">Publications</p>
+        <h2 class="section__title">Peer-reviewed</h2>
+        <p class="section__sub">Most recent first.</p>
       </div>
-      <div class="quotes">
-        <!-- EDIT ME: real quotes build huge credibility -->
-        <figure class="quote reveal">
-          <blockquote>"A genuine pleasure to work with — professional, creative, and the results spoke for themselves."</blockquote>
-          <figcaption>— Partner Name, Brand</figcaption>
-        </figure>
-        <figure class="quote reveal">
-          <blockquote>"Delivered ahead of schedule and the engagement blew past our targets. We'll be back."</blockquote>
-          <figcaption>— Partner Name, Brand</figcaption>
-        </figure>
+
+      <ol class="pubs pubs--numbered">
+        <!-- EDIT ME: your published / forthcoming articles -->
+        <li class="pub pub--static reveal">
+          <span class="pub__year">2024</span>
+          <span class="pub__main">
+            <span class="pub__title">A Dynamic Factor Model of the Yield Curve</span>
+            <span class="pub__authors">with Coauthor A</span>
+            <span class="pub__venue"><em>Journal of Financial Economics</em>, 152(2), 101–137.</span>
+            <span class="pub__links"><a href="#">DOI</a> · <a href="#">PDF</a></span>
+          </span>
+        </li>
+        <li class="pub pub--static reveal">
+          <span class="pub__year">2023</span>
+          <span class="pub__main">
+            <span class="pub__title">Bond Return Predictability and the Macroeconomy</span>
+            <span class="pub__authors">with Coauthor B</span>
+            <span class="pub__venue"><em>Review of Financial Studies</em>, 36(8), 3201–3245.</span>
+            <span class="pub__links"><a href="#">DOI</a> · <a href="#">PDF</a></span>
+          </span>
+        </li>
+        <li class="pub pub--static reveal">
+          <span class="pub__year">2022</span>
+          <span class="pub__main">
+            <span class="pub__title">Inflation Risk and the Term Premium</span>
+            <span class="pub__authors">solo-authored</span>
+            <span class="pub__venue"><em>Journal of Monetary Economics</em>, 130, 45–61.</span>
+            <span class="pub__links"><a href="#">DOI</a> · <a href="#">PDF</a></span>
+          </span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===================== TEACHING ===================== -->
+  <section class="section section--alt" id="teaching">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="section__eyebrow">Teaching</p>
+        <h2 class="section__title">Courses</h2>
+      </div>
+      <div class="teaching reveal">
+        <!-- EDIT ME -->
+        <div class="teach">
+          <h3>Fixed Income Securities</h3>
+          <p>Instructor · Your University · 20XX–present</p>
+          <p class="teach__note">Undergraduate / MBA. Evaluation: X.X / 5.0</p>
+        </div>
+        <div class="teach">
+          <h3>Investments &amp; Asset Pricing</h3>
+          <p>Teaching Assistant · Your University · 20XX</p>
+          <p class="teach__note">PhD core sequence.</p>
+        </div>
+        <div class="teach">
+          <h3>Empirical Methods in Finance</h3>
+          <p>Teaching Assistant · Your University · 20XX</p>
+          <p class="teach__note">Master's level.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -279,13 +271,16 @@
   <!-- ===================== CONTACT ===================== -->
   <section class="section section--cta" id="contact">
     <div class="container cta__inner reveal">
-      <p class="section__eyebrow">Let's talk</p>
-      <h2 class="section__title">Ready to work together?</h2>
-      <p class="section__sub">Tell me about your brand and what you have in mind. I reply within 1–2 business days.</p>
+      <p class="section__eyebrow">Get in touch</p>
+      <h2 class="section__title">Contact</h2>
+      <p class="section__sub">Happy to discuss research, data, seminars, and collaboration.</p>
       <!-- EDIT ME: your real email -->
-      <a class="btn btn--primary btn--lg" href="mailto:you@example.com?subject=Collaboration%20enquiry">Email me</a>
-      <p class="cta__alt">Or find me on
-        <a href="#">Instagram</a> · <a href="#">LinkedIn</a> · <a href="#">YouTube</a>
+      <a class="btn btn--primary btn--lg" href="mailto:you@university.edu">you@university.edu</a>
+      <p class="cta__alt">
+        Office: Department of Finance, Your University · Room XXX
+      </p>
+      <p class="cta__alt">
+        <a href="#">Google Scholar</a> · <a href="#">SSRN</a> · <a href="#">ORCID</a> · <a href="cv.pdf">CV</a>
       </p>
     </div>
   </section>
@@ -293,7 +288,7 @@
   <!-- ===================== FOOTER ===================== -->
   <footer class="footer">
     <div class="container footer__inner">
-      <span>© <span id="year2"></span> Your Name. All rights reserved.</span>
+      <span>© <span id="year2"></span> Your Name.</span>
       <a href="#top">Back to top ↑</a>
     </div>
   </footer>
